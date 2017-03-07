@@ -1,0 +1,62 @@
+<footer class="bs-footer text-muted" role="contentinfo">
+  <div class="container">
+    <ul class="bs-footer-links hidden-print">
+      <li><a data-proofer-ignore href="{{ site.github.repository_url }}" target="_blank">GitHub</a></li>
+      <li><a href="https://twitter.com/bimstandards" target="_blank">Twitter</a></li>
+      <li><a href="/apropos/">A propos</a></li>
+    </ul>
+    <p>BIMstandards, la documentation collaborative sur les standards openBIM. </p>
+    <p>Créé par <a href="https://fr.linkedin.com/in/alexandregrignon" target="_blank">Alexandre Grignon</a>, avec l'aide de <a href="{{ site.github.repository_url }}/graphs/contributors" target="_blank">contributeurs</a>.</p>
+    <p>{{ site.version }}. Licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a>.</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="/assets/js/toc.js"></script>
+<!-- <script src="/assets/js/anchor.min.js"></script> -->
+<script src="/assets/js/list.min.js"></script>
+<script src="/assets/js/list.fuzzysearch.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('#toc').toc({ headers: 'h1, h2' });
+  });
+</script>
+
+<!-- https://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+<script type="text/javascript">
+  $(function() {
+    $('a[href*="#"]:not([href="#"]):not([rel="nofollow"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+
+<!-- <script>
+  anchors.options = {
+    placement: 'left',
+    class: 'anchor-link'
+  };
+  anchors.add('.bs-content h1, .bs-content h2, .bs-content h3');
+</script> -->
+
+<script>
+  var options = {
+    valueNames: [ 'fr_fr', 'ifcproduct', 'ifctypeproduct' ],
+    plugins: [ ListFuzzySearch() ]
+  };
+  var ifcListArchi = new List('table-domaine-architectural', options);
+  var ifcListStructure = new List('table-domaine-structurel', options);
+  var ifcListFluides = new List('table-domaine-fluides', options);
+</script>
