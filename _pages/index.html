@@ -32,7 +32,7 @@ permalink: /
           </tr>
         </thead>
         <tbody>
-          {% assign fiches_sorted = site.fiches | sort: 'destination_nom' | where: 'statut','publiée' %}
+          {% assign fiches_sorted = site.fiches | sort: 'destination_nom' %}
           {% for fiche in fiches_sorted %}
             <tr>
               <td><a class="btn btn-primary btn-sm" href="{{ fiche.url }}" role="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> voir la fiche</a></td>              
@@ -41,13 +41,13 @@ permalink: /
               <td><strong>{{ fiche.destination_nom }}</strong> / {{ fiche.destination_version }}</td>
               <td>{{ fiche.usage_metier }}</td>
               <td>
-                {% if page.status == 'publiée' %}
+                {% if fiche.statut == 'publiée' %}
                   <span class="badge badge-success"><i class="fa fa-check-circle-o" aria-hidden="true"></i> {{ fiche.statut }}</span>
                 {% endif %}
-                {% if page.status == 'relecture' %}
+                {% if fiche.statut == 'relecture' %}
                   <span class="badge badge-info"><i class="fa fa-eye" aria-hidden="true"></i> {{ fiche.statut }}</span>
                 {% endif %}
-                {% if page.status == 'brouillon' %}
+                {% if fiche.statut == 'brouillon' %}
                   <span class="badge badge-warning"><i class="fa fa-pencil" aria-hidden="true"></i> {{ fiche.statut }}</span>
                 {% endif %}
               </td>
