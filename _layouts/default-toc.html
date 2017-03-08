@@ -56,7 +56,17 @@
               <dd class="col-sm-9">{{ page.usage_metier }}</dd>
               
               <dt class="col-sm-3">Statut</dt>
-              <dd class="col-sm-9"><span class="badge badge-success"><i class="fa fa-check-circle-o" aria-hidden="true"></i> {{ page.statut }}</span></dd>
+              <dd class="col-sm-9">
+                {% if page.statut == 'publiée' %}
+                  <span class="badge badge-success"><i class="fa fa-check-circle-o" aria-hidden="true"></i> {{ page.statut }}</span>
+                {% endif %}
+                {% if page.statut == 'relecture' %}
+                  <span class="badge badge-info"><i class="fa fa-eye" aria-hidden="true"></i> {{ page.statut }}</span>
+                {% endif %}
+                {% if page.statut == 'brouillon' %}
+                  <span class="badge badge-warning"><i class="fa fa-pencil" aria-hidden="true"></i> {{ page.statut }}</span>
+                {% endif %}
+              </dd>
               
               <dt class="col-sm-3">Mise à jour</dt>
               <dd class="col-sm-9"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ page.maj }}</dd>
