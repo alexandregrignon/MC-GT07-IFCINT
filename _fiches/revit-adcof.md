@@ -9,7 +9,7 @@ destination_version: 9-2
 destination_editeur: Progiscad
 usage_metier: structure
 comments: true
-statut: publié
+statut: publiée
 maj: 08/03/2017
 ---
 
