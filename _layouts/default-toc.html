@@ -45,18 +45,21 @@
             </div>
             <dl class="row">
               <dt class="col-sm-3">Source</dt>
-              <dd class="col-sm-9">{{ fiche.source_nom }} / {{ fiche.source_version }}</dd>
-              <dd class="col-sm-9 offset-sm-3">{{ fiche.source_editeur }}</dd>
+              <dd class="col-sm-9">{{ page.source_nom }} / {{ page.source_version }}</dd>
+              <dd class="col-sm-9 offset-sm-3">{{ page.source_editeur }}</dd>
               
               <dt class="col-sm-3">Destination</dt>
-              <dd class="col-sm-9">{{ fiche.destination_nom }} / {{ fiche.source_version }}</dd>
-              <dd class="col-sm-9 offset-sm-3">{{ fiche.destination_editeur }}</dd>
+              <dd class="col-sm-9">{{ page.destination_nom }} / {{ page.source_version }}</dd>
+              <dd class="col-sm-9 offset-sm-3">{{ page.destination_editeur }}</dd>
               
               <dt class="col-sm-3">Usage-Métier</dt>
-              <dd class="col-sm-9">{{ fiche.usage_metier }}</dd>
+              <dd class="col-sm-9">{{ page.usage_metier }}</dd>
               
               <dt class="col-sm-3">Statut</dt>
-              <dd class="col-sm-9"><span class="badge badge-default"><i class="fa fa-check-circle-o" aria-hidden="true"></i> {{ fiche.statut }}</span> / <i class="fa fa-clock-o" aria-hidden="true"></i> {{ fiche.maj }}</dd>
+              <dd class="col-sm-9"><span class="badge badge-default"><i class="fa fa-check-circle-o" aria-hidden="true"></i> {{ page.statut }}</span></dd>
+              
+              <dt class="col-sm-3">Mise à jour</dt>
+              <dd class="col-sm-9"><span class="badge badge-default"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ page.maj }}</dd>
             </dl>
             {{ content }}
             <div class="row">
