@@ -32,7 +32,7 @@ permalink: /
           </tr>
         </thead>
         <tbody>
-          {% assign fiches_sorted = site.fiches | sort: 'destination_nom' | where: 'statut','publié' %}
+          {% assign fiches_sorted = site.fiches | sort: 'destination_nom' | where: 'statut','publiée' %}
           {% for fiche in fiches_sorted %}
             <tr>
               <td><a class="btn btn-primary btn-sm" href="{{ fiche.url }}" role="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> voir la fiche</a></td>              
