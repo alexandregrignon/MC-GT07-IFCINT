@@ -1,5 +1,6 @@
----
 layout: default-toc
+comments: true
+
 titre: Export du logiciel A et Import du logiciel B
 source_nom: Logiciel A
 source_version: Version A
@@ -8,10 +9,10 @@ destination_nom: Logiciel B
 destination_version: Version B
 destination_editeur: Editeur B
 usage_metier: role A > role B
-comments: true
+
 statut: brouillon/relecture/publiée
 maj: date sous la forme JJ/MM/AAAA
----
+
 
 ## Prérequis
 
