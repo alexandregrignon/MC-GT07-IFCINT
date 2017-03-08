@@ -19,6 +19,41 @@ permalink: /
   
   <div class="row">
     <div class="col-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Usage-Métier</th>
+            <th>Date de mise à jour</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% assign fiches_sorted = site.fiches | sort: 'logicielsource_nom' | where: 'statut','publié' %}
+          {% for fiche in fiches_sorted %}
+            <tr>
+              <td><a href="{{ fiche.url }}">voir la fiche</a></td>
+              <td>{{ fiche.titre }}</td>
+            </tr>
+          {% endfor %}
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
       
     </div>
   </div>
