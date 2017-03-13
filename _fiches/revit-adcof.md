@@ -1,9 +1,9 @@
 ---
 layout: default-toc
 titre: Export du logiciel ARCHICAD et Import du logiciel ADCOF
-source_nom: Revit
-source_version: 2016 et supérieures
-source_editeur: Autodesk
+source_nom: ARCHICAD
+source_version: 20
+source_editeur: Graphisoft
 destination_nom: ADCOF
 destination_version: 9-2
 destination_editeur: Progiscad
