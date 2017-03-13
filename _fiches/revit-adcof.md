@@ -1,6 +1,6 @@
 ---
 layout: default-toc
-titre: Export du logiciel REVIT et Import du logiciel ADCOF
+titre: Export du logiciel ARCHICAD et Import du logiciel ADCOF
 source_nom: Revit
 source_version: 2016 et supérieures
 source_editeur: Autodesk
