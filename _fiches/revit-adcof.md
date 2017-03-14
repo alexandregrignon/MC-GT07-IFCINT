@@ -19,7 +19,7 @@ L'import d'un fichier IFC produit par le logiciel REVIT dans ADCOF s'effectue co
 
 ## Export IFC depuis REVIT
 
-Les options par défaut de REVIT en matière d'export IFC suffisent normalement pour que le fichier produit soit compris par ADCOF ; il convient toutefois de veiller à ce que REVIT découpe les murs et poteaux par étage et que l'export soit effectué au format IFC 2x3 :
+Les options par défaut de REVIT en matière d'export IFC suffisent normalement pour que le fichier produit soit compris par ADCOF ; il convient toutefois de veiller à ce que REVIT soit paramétré pour découper les murs et poteaux par étage et que l'export soit effectué au format IFC 2x3 :
 
 ![capture]({{ site.url }}/assets/img/revit-adcof-01.jpg)
 
