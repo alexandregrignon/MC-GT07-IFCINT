@@ -15,7 +15,7 @@ maj: 07/03/2017
 
 ## Prérequis
 
-L'import d'un fichier IFC produit par le logiciel REVIT dans ADCOF s'effectue correctement à compter de la version 9-2 d'ADCOF.
+L'import d'un fichier IFC produit par le logiciel REVIT dans ADCOF s'effectue correctement à compter de la version 9-2 d'ADCOF. Ne pas oublier d'installer le plugin open source de revit.
 
 ## Export IFC depuis REVIT
 
