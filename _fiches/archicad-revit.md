@@ -1,5 +1,5 @@
 ---
-layout: default-toc
+layout: default
 titre: Export du logiciel ARCHICAD et Import du logiciel REVIT
 source_nom: ARCHICAD
 source_version: 20
