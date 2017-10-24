@@ -8,6 +8,7 @@ destination_nom: ADCOF
 destination_version: 9-2
 destination_editeur: Progiscad
 usage_metier: structure
+nom_pdf: revit-adcof.pdf
 comments: true
 statut: publiée
 maj: 07/03/2017
