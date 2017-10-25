@@ -5,27 +5,38 @@ comments: false
 permalink: /nouveau/
 ---
 
-## Méthode
+## Méthode d'ajout d'une nouvelle fiche
 
-<div class="card-group">
-  <div class="card">
-    <div class="card-block">
-      <h4 class="card-title">Etape 1</h4>
-      <p class="card-text">L'éditeur du logiciel B crée un nouvelle fiche en suivant le lien ci-dessous, et la complète en suivant le modèle pré-rempli.</p>
-      <a href="https://github.com/alexandregrignon/MC-GT07-IFCINT/issues/new?title=Nouvelle%20fiche%20%3A%20Logiciel%20A%20vers%20Logiciel%20B" class="btn btn-primary">Créer une nouvelle fiche</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-block">
-      <h4 class="card-title">Etape 2</h4>
-      <p class="card-text">La nouvelle fiche est commentée et révisée par l'éditeur du logiciel A (onglet "<a href="https://github.com/alexandregrignon/MC-GT07-IFCINT/issues">Issues</a>" du dépôt Github).</p>
-      <a href="https://github.com/alexandregrignon/MC-GT07-IFCINT/issues/2" class="btn btn-primary">Exemple</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-block">
-      <h4 class="card-title">Etape 3</h4>
-      <p class="card-text">La fiche est mise en ligne par l'administrateur de la plateforme. (fichier à créer dans le dossier <a href="https://github.com/alexandregrignon/MC-GT07-IFCINT/tree/master/_fiches">_fiches</a> et illustrations à placer dans le dossier <a href="https://github.com/alexandregrignon/MC-GT07-IFCINT/tree/master/assets/img">assets/img</a>).</p>
-    </div>
-  </div>
-</div>
+### Etape 1 : Prérequis
+
+[Créer un compte Github (gratuit).](https://github.com/join)
+
+### Etape 2 : Ajouter les métadonnées de la fiche
+
+* Copier le modèle ci-dessous :
+
+```
+---
+layout: fiche // Ne pas modifier
+comments: true // Ne pas modifier
+titre: Fiche point à point - Logiciel A > Logiciel B
+source_nom: Logiciel A
+source_version: version
+source_editeur: Editeur A
+destination_nom: Logiciel B
+destination_version: version
+destination_editeur: Editeur B
+usage_metier: usage
+nom_pdf: source-destination.pdf
+statut: statut // brouillon, relecture, publiée
+maj: 07/03/2017 // Date de mise à jour
+---
+```
+
+* [Créer une nouvelle fiche](https://github.com/alexandregrignon/MC-GT07-IFCINT/new/master/_fiches), coller le texte et compléter les métadonnées.
+
+* Enregistrer le fichier en le nommant de la façon suivante : `source-destination.md`, par exemple `archicad-revit.md`.
+
+### Etape 3 : Ajouter la fiche au format .pdf
+
+Dans le répertoire `_fiches`, [ajouter le fichier pdf](https://github.com/alexandregrignon/MC-GT07-IFCINT/upload/master/_fiches) nommé de la façon suivante : `source-destination.pdf`, par exemple `archicad-revit.pdf`.

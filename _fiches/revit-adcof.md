@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: fiche
 titre: Fiche point à point - Revit > ADCOF
 source_nom: Revit
 source_version: 2016 ou supérieure
