@@ -18,6 +18,39 @@
 <script src="/assets/js/list.fuzzysearch.js"></script>
 <script src="/assets/js/pdfjs/build/pdf.js"></script>
 <script src="/assets/js/pdfjs/build/pdf.worker.js"></script>
+<script src="/assets/js/tablefilter/tablefilter.js"></script>
+
+<script>
+var tfConfig = {
+        col_widths: null,
+        
+        clear_filter_text: 'Tout',
+        
+        no_results_message: { content: 'Aucun résultat' },
+  
+        col_0: 'none',
+        col_1: 'select',
+        col_2: 'none',
+        col_3: 'select',
+        col_4: 'none',
+        col_5: 'none',
+        col_6: 'none',
+        col_7: 'none',
+
+        /** Bootstrap integration */
+
+        // aligns filter at cell bottom when Bootstrap is enabled
+        filters_cell_tag: 'th',
+
+        // allows Bootstrap table styling
+        themes: [{
+            name: 'transparent'
+        }]
+    };
+
+var tf = new TableFilter(document.querySelector('#tablefilter'), tfConfig);
+tf.init();
+</script>
 
 <script type="text/javascript">
   $(document).ready(function() {
